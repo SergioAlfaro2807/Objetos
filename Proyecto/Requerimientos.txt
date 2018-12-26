@@ -1,0 +1,123 @@
+El sistema deberá permitir al usuario iniciar sesión en la aplicación.
+
+El sistema deberá permitir al usuario cerrar sesión de la aplicación
+
+El sistema permitirá al usuario modificar al usuario su contraseña.
+
+El sistema permitirá registrar a un usuario.
+
+
+El sistema permitirá registrar a un usuario con la siguiente informacion: nombre, primer apellido,
+segundo apellido, correo, cedula, genero y un avatar
+
+
+El sistema permitirá registrar clientes.
+
+
+El sistema permitirá registrar clientes de tipo juridico con la siguiente informacion: nombre,
+identificacion (validación de que la cedula sea del pais), la provincia, el canton, el distrito
+, direccion exacta y la ubicacion por medio de las librerias de google.
+
+
+El sistema permitirá registrar contactos para los clientes tipo juridicos.
+
+
+El sistema permitirá registrar contactos con la siguiente información:nombre, 
+el primer apellido, el segundo apellido, la cédula, teléfono y correo electrónico.
+
+
+El sistema permitirá registrar clientes de tipo fisicos con la siguiente informacion: nombre,
+ primer apellido, segundo apellido, provincia, cantón, distrito, dirección exacta, correo electrónico y teléfono.
+
+El sistema permitirá modificar clientes.
+
+El sistema permitirá listar clientes.
+
+El sistema permitirá buscar clientes.
+
+
+
+
+El sistema permitirá registrar proyectos.
+
+
+
+
+
+
+El sistema permitirá registrar proyectos de tipo academicos con la siguiente informacion: codigo (unico), nombre
+una descripcion, fecha de inicio, fecha fin, tecnologias asociadas, serie de actividades y el cliente
+será el usuario de la aplicación.
+
+
+El sistema permitirá registrar proyectos de tipo comercial con la siguientes informacion: codigo (unico), nombre
+una descripcion, fecha de inicio, fecha fin, tecnologias asociadas, serie de actividades y 
+un cliente asociado.
+
+
+El sistema permitirá modificar proyectos.
+
+El sistema permitirá listar proyectos.
+
+El sistema permitirá buscar proyectos.
+
+
+
+
+El sistema permitirá registrar tecnologias
+
+
+EL sistema permitirá registrar tecnologias con la siguiente informacion: codigo y nombre.
+
+El sistema permitirá modificar tecnologias.
+
+El sistema permitirá buscar tecnologias.
+
+El sistema permitira listar tecnologias.
+
+
+El sistema permitirá registrar actividades.
+
+
+El sistema permitirá registrar actividades con la siguiente información: codigo, nombre y descripción.
+
+
+El sistema permitirá registrar bitácoras.
+
+
+El sistema permitirá registra bitácoras con la siguiente información: actividad, fecha de inicio,
+hora de inicio, fecha fin y hora fin.
+
+El sistema permitirá asociar una bitacora y el usuario que la realizó, a un proyecto.
+
+
+
+
+No funcionales.
+
+ Los registros de la bitácora podrán ingresarse de dos formas: la primera de manualmente y la
+segunda de forma automática, por medio de un botón que invoque el usuario y que inicie un timer
+que cuente los minutos que lleva trabajando el usuario. Este timer se puede poner en pausa, detener
+o reiniciar. En el caso de que estas dos últimas opciones, se deberá de indicar la actividad en la que
+se estuvo trabajando, para dejar guardado en la bitácora el registro
+
+
+ El sistema permitirá que el usuario genere los siguientes reportes: un reporte de tiempo por período
+de tiempo para un proyecto específico, el reporte de curva de aprendizaje, que muestra el tiempo
+que se ha durado en un mismo tipo de actividad, para un proyecto y rango de tiempo específico y
+las horas invertidas en cada proyecto, en un período de tiempo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

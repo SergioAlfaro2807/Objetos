@@ -1,0 +1,6 @@
+{
+  "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+  "server": "PERSONAL\\MSSQLSERVER",
+  "database": "CloudTime",
+  "user": "admin",
+  "password": "Andrey2807"}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.ui.ControllerMenu">
+   <children>
+      <JFXButton fx:id="btnPerfil" alignment="BASELINE_LEFT" layoutY="79.0" onAction="#MenuChanging" prefHeight="79.0" prefWidth="189.0" style="-fx-background-color: #993F4D;" text="Mi perfil" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnProyectos" alignment="BASELINE_LEFT" layoutY="237.0" onAction="#MenuChanging" prefHeight="79.0" prefWidth="189.0" style="-fx-background-color: #993F4D;" text="Proyectos" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClientes" alignment="BASELINE_LEFT" layoutY="158.0" onAction="#MenuChanging" prefHeight="79.0" prefWidth="189.0" style="-fx-background-color: #993F4D;" text="Clientes" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnTecnologias" alignment="BASELINE_LEFT" layoutX="-7.0" layoutY="316.0" onAction="#MenuChanging" prefHeight="79.0" prefWidth="196.0" style="-fx-background-color: #993F4D;" text="Tecnologías" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCerrarSesion" alignment="BASELINE_LEFT" layoutY="395.0" onAction="#MenuChanging" prefHeight="79.0" prefWidth="189.0" style="-fx-background-color: #993F4D;" text="Cerrar sesión" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnInicio" alignment="BASELINE_LEFT" contentDisplay="RIGHT" onAction="#MenuChanging" prefHeight="79.0" prefWidth="189.0" style="-fx-background-color: #993F4D;" text="Inicio" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="50.0" layoutX="129.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cloud-computing.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="133.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user-avatar-main-picture.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="133.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/clerk-with-tie.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="139.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/file.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="139.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/android-character-symbol.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="46.0" layoutX="139.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="367.0" layoutY="14.0" prefHeight="53.0" prefWidth="162.0" text="Proyectos">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="222.0" layoutY="132.0" prefHeight="210.0" prefWidth="196.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="196.0" text="Registrar un nuevo ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="196.0" text="proyecto">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="58.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/business-presentation%20(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="66.0" top="28.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="btnRegistrarProyecto" onAction="#registrarChanging" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #993F4D;" text="Registrar" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox layoutX="487.0" layoutY="132.0" prefHeight="210.0" prefWidth="196.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="138.0" text="Listar todos los ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="9.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="28.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="99.0" text="proyectos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="9.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="46.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/checklist.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="63.0" top="18.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="btnListarProyectos" onAction="#listarChanging" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #993F4D;" text="Listar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="37.0" right="16.0" top="37.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

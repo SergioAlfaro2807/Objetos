@@ -1,0 +1,10 @@
+.error {
+ -fx-border-color: red;
+ -fx-border-width: 1px;
+ 
+}
+
+.error2 {
+   -fx-border-color: red;
+ -fx-border-width: 1px; 
+}

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="975.0" stylesheets="@../ui/error.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.ui.ControllerLogIn">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="869.0" style="-fx-background-color: #782230;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/man.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="47.0" prefWidth="356.0" text="Registrar usuario" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei UI" size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="570.0" prefWidth="632.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="212.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="518.0" minWidth="10.0" prefWidth="324.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="510.0" minWidth="10.0" prefWidth="93.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="91.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Primer nombre:" wrappingWidth="161.5732421875">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtPrimerNombre" onAction="#validation" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Primer apellido:" wrappingWidth="161.5732421875" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="txtPrimerApellido" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo apellido:" wrappingWidth="184.5732421875" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="txtSegundoApellido" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Correo electrónico:" wrappingWidth="192.5732421875" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="txtCorreo" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genero:" wrappingWidth="79.5732421875" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Identificación:" wrappingWidth="142.5732421875" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="txtIdentificacion" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Avatar:" wrappingWidth="79.5732421875" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField fx:id="txtAvatar" prefHeight="29.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <JFXRadioButton fx:id="rbMasculino" text="Masculino" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="rbSexo" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbFemenino" text="Femenino" toggleGroup="$rbSexo" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbOtro" text="Otro" toggleGroup="$rbSexo" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="240.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <Label fx:id="primerNombreLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="primerNombreLabel1" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="primerApellidoLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="primerApellidoLabel1" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="segundoApellidoLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="segundoApellidoLabel1" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="correoElectronicoLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="identificacionLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="correoElectronicoLabel1" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="131.5732421875" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <ImageView fx:id="btnVerContrasenna" fitHeight="37.0" fitWidth="40.0" onDragDetected="#mousePressed" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <image>
+                        <Image url="@../img/eye.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <PasswordField fx:id="txtContrasenna" prefHeight="30.0" prefWidth="326.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <RadioButton fx:id="rbVer" mnemonicParsing="false" onAction="#mousePressed" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding></RadioButton>
+                  <TextField fx:id="txtContrasenna1" prefHeight="33.0" prefWidth="326.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="sexoLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="avatarLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="contrasennaLabel" onDragDetected="#validation" textFill="#782230" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="60.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="5.0" />
+               </opaqueInsets>
+            </GridPane>
+            <VBox prefHeight="578.0" prefWidth="339.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="240.0" text="Llene todos los espacios requeridos">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="9.0" top="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="207.0" text="con sus datos y su cuenta será">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="58.0" text="creada.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fitHeight="99.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="90.0" top="50.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnCrearCuenta" onAction="#crearCuenta" prefHeight="36.0" prefWidth="180.0" ripplerFill="WHITE" style="-fx-background-color: #993F4D;" text="Crear usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="40.0" right="30.0" top="65.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="Volver" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="180.0" ripplerFill="WHITE" style="-fx-background-color: #993F4D;" text="Volver" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="41.0" top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="526.0" prefWidth="869.0" style="-fx-background-color: #782230;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.ui.ControllerLogIn">
+   <children>
+      <AnchorPane layoutX="435.0" layoutY="34.0" prefHeight="458.0" prefWidth="395.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="txtAvatarLogin" focusColor="#7094e1" layoutX="90.0" layoutY="115.0" prefHeight="35.0" prefWidth="212.0" promptText="Correo electrónico" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtContrasennaLogin" focusColor="#7094e1" layoutX="92.0" layoutY="194.0" prefHeight="35.0" prefWidth="212.0" promptText="Contraseña" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnIniciarSesion" layoutX="88.0" layoutY="295.0" onAction="#iniciarSesion" prefHeight="35.0" prefWidth="212.0" style="-fx-background-color: #993F4D;" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Hyperlink fx:id="btnRecuperarContrasenna" layoutX="122.0" layoutY="369.0" onAction="#RecuperarContrasenna" prefHeight="28.0" prefWidth="151.0" text="¿Olvidó su contraseña?" textFill="#782230">
+               <font>
+                  <Font size="13.0" />
+               </font></Hyperlink>
+            <Label layoutX="101.0" layoutY="58.0" prefHeight="35.0" prefWidth="125.0" text="CloudTime" textFill="#782332">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="70.0" layoutX="236.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/cloud-computing%20(1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="avatarLogInLabel" layoutX="92.0" layoutY="159.0" textFill="#993f4d" />
+            <Label fx:id="contrasennaLogInLabel" layoutX="91.0" layoutY="237.0" textFill="#993f4d" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="155.0" layoutY="135.0" prefHeight="27.0" prefWidth="125.0" text="Por favor inicie " textFill="#eceac7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="174.0" text="sesión para empezar" textFill="#eceac7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNuevaCuenta" layoutX="111.0" layoutY="336.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="212.0" ripplerFill="#2b3b5b" style="-fx-background-color: #ffffff;" text="Crear cuenta">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="185.0" layoutX="182.0" layoutY="242.0" startX="-114.0" stroke="#fff373" />
+      <Label layoutX="78.0" layoutY="279.0" text="¿Todavía no ha creado una cuenta?" textFill="#eceac7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="65.0" prefHeight="35.0" prefWidth="272.0" text="Bienvenido a CloudTime" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
