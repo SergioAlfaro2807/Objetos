@@ -213,7 +213,10 @@
                         <Font size="22.0" />
                      </font>
                   </Text>
-                  <JFXComboBox fx:id="cmTipoProyecto" layoutX="211.0" layoutY="182.0" onAction="#tipoProyecto" prefHeight="36.0" prefWidth="219.0" stylesheets="@../ui/comobox.css" />
+                  <JFXComboBox fx:id="cmTipoProyecto" layoutX="211.0" layoutY="182.0" onAction="#tipoProyecto" prefHeight="36.0" prefWidth="219.0" stylesheets="@../ui/comobox.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXComboBox>
                   <AnchorPane fx:id="errorPane" layoutX="-205.0" layoutY="134.0" prefHeight="245.0" prefWidth="382.0" style="-fx-background-color: #782230;" visible="false">
                      <children>
                         <Label layoutX="26.0" layoutY="48.0" prefHeight="56.0" prefWidth="332.0" text="Por favor seleccione una tecnología" textFill="WHITE">

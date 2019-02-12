@@ -284,9 +284,7 @@ public class ControllerListarActividades implements Initializable {
     public void entendido(ActionEvent event){
          if(event.getSource() == btnEntendido || event.getSource() == btnEntendidoEliminar ){
              modificarPane.setVisible(false);
-                entendidoEliminar.setVisible(false);
-            
+                entendidoEliminar.setVisible(false);        
          }
     }
-      
 }

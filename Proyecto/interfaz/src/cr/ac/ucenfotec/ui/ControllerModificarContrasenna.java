@@ -171,7 +171,7 @@ public class ControllerModificarContrasenna {
             
      controller.modificarContrasenna(contrasennaVieja, contrasennaNueva);
      
-            Parent blah = FXMLLoader.load(getClass().getResource("../fxml/Tecnologias.fxml"));
+            Parent blah = FXMLLoader.load(getClass().getResource("../fxml/MenuPrincipal.fxml"));
             Scene scene = new Scene(blah);
             Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             appStage.setScene(scene);

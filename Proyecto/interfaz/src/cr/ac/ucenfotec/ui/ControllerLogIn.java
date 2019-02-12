@@ -21,6 +21,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -348,18 +349,16 @@ public class ControllerLogIn implements Initializable {
         boolean berror = validationLogIn();
         
         if(berror == true){
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/MenuPrincipal.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/InicioPrincipal.fxml"));
              Parent tableViewParent = (Parent) loader.load();
           Scene tableViewScene = new Scene(tableViewParent);
            Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
            
-             window.setScene(tableViewScene);
-          window.show();
-          ControllerMenu1 controllerMenu = loader.getController();
-          String contrasennaEncriptada = DigestUtils.md5Hex(txtContrasennaLogin.getText());
-        controllerMenu.verUsuario(contrasennaEncriptada);
-           
-        
+         window.setScene(tableViewScene);
+         window.show();
+         ControllerMenu controllerMenu = loader.getController();
+         String contrasennaEncriptada = DigestUtils.md5Hex(txtContrasennaLogin.getText());
+        controllerMenu.verUsuario(contrasennaEncriptada);      
         }
         
          
@@ -381,7 +380,7 @@ public class ControllerLogIn implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
- 
+
     }
 
 }

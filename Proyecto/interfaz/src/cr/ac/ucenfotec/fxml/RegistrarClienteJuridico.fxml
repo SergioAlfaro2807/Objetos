@@ -255,6 +255,10 @@
                         <Insets top="60.0" />
                      </GridPane.margin>
                   </Label>
+                  <Label fx:id="DireccionLabel" textFill="#993f4d" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
                </children>
                <opaqueInsets>
                   <Insets top="5.0" />
@@ -298,10 +302,6 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label fx:id="DireccionLabel" layoutX="150.0" layoutY="124.0" textFill="#993f4d">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Label>
                </children>
             </AnchorPane>
          </children>

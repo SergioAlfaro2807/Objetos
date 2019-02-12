@@ -15,7 +15,7 @@
 
 <AnchorPane fx:id="ListarPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="973.0" style="-fx-background-color: #993F4D;" stylesheets="@../ui/tablas.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.ucenfotec.ui.ControllerListarProyectos">
    <children>
-      <TableView fx:id="tblProyectos" layoutY="126.0" prefHeight="547.0" prefWidth="834.0">
+      <TableView fx:id="tblProyectos" layoutY="126.0" prefHeight="551.0" prefWidth="834.0">
         <columns>
           <TableColumn fx:id="clmNombre" prefWidth="133.0" text="Nombre" />
           <TableColumn fx:id="clmCodigo" prefWidth="133.0" text="Codigo" />
@@ -66,18 +66,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <VBox.margin>
-                  <Insets left="4.0" top="30.0" />
-               </VBox.margin>
-            </JFXButton>
-            <JFXButton fx:id="btnModificar1" onAction="#modificar" prefHeight="56.0" prefWidth="134.0" style="-fx-background-color: #993F4D;" text="Tecnologías" textFill="WHITE">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <VBox.margin>
-                  <Insets left="4.0" top="50.0" />
+                  <Insets left="4.0" top="100.0" />
                </VBox.margin>
             </JFXButton>
             <JFXButton fx:id="btnModificar" onAction="#modificar" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: #993F4D;" text="Modificar" textFill="WHITE">

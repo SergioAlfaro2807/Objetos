@@ -127,7 +127,10 @@
                         <Insets bottom="32.0" left="4.0" />
                      </GridPane.margin>
                   </Text>
-                  <TextArea fx:id="txtDescripcion" prefHeight="95.0" prefWidth="304.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextArea fx:id="txtDescripcion" prefHeight="95.0" prefWidth="304.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextArea>
                   <JFXDatePicker fx:id="fechaInicio" prefHeight="28.0" prefWidth="276.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <JFXTimePicker fx:id="horaInicio" prefHeight="28.0" prefWidth="276.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                   <JFXTimePicker fx:id="horaFin" prefHeight="28.0" prefWidth="276.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />

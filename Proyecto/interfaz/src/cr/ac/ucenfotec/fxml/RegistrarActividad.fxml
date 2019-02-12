@@ -133,7 +133,10 @@
                         <Insets bottom="58.0" left="4.0" />
                      </GridPane.margin>
                   </Text>
-                  <TextArea fx:id="txtDescripcion" prefHeight="92.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextArea fx:id="txtDescripcion" prefHeight="92.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="17.0" />
+                     </font></TextArea>
                   <Label fx:id="DescripcionLabel" textFill="#993f4d" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <font>
                         <Font size="14.0" />

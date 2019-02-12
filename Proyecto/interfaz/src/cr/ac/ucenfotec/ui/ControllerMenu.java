@@ -128,12 +128,33 @@ public class ControllerMenu implements Initializable{
             appStage.show(); 
         }
                   
-           if(event.getSource() == btnInicio){
-            Parent blah = FXMLLoader.load(getClass().getResource("../fxml/MenuPrincipal.fxml"));
-            Scene scene = new Scene(blah);
-            Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            appStage.setScene(scene);
-            appStage.show(); 
+          
+               if(event.getSource() == btnInicio){
+                
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/InicioPrincipal.fxml"));
+             Parent tableViewParent = (Parent) loader.load();
+          Scene tableViewScene = new Scene(tableViewParent);
+           Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+           
+             window.setScene(tableViewScene);
+          window.show();
+          ControllerMenu controllerProyecto = loader.getController();
+         
+         controllerProyecto.verUsuario(contrasennaEncriptada1);
+        }
+          
+                 if(event.getSource() == btnPerfil){
+              
+                 FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/MenuPrincipal.fxml"));
+             Parent tableViewParent = (Parent) loader.load();
+          Scene tableViewScene = new Scene(tableViewParent);
+           Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+           
+             window.setScene(tableViewScene);
+          window.show();
+          ControllerMenu1 controllerProyecto = loader.getController();
+         
+         controllerProyecto.verUsuario(contrasennaEncriptada1);
         }
          
     }

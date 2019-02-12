@@ -100,7 +100,7 @@ public class ControllerRecuperarContrasenna {
            
              public void volver(ActionEvent event) throws IOException{
         if(event.getSource() == btnVolver){
-             Parent blah = FXMLLoader.load(getClass().getResource("../fxml/Tecnologias.fxml"));
+             Parent blah = FXMLLoader.load(getClass().getResource("../fxml/InicioSesion.fxml"));
             Scene scene = new Scene(blah);
             Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             appStage.setScene(scene);

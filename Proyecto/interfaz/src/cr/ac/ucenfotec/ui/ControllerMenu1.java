@@ -125,6 +125,20 @@ public class ControllerMenu1 implements Initializable{
          controllerProyecto.verUsuario(contrasennaEncriptada1);
         }
         
+          if(event.getSource() == btnInicio){
+                
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/InicioPrincipal.fxml"));
+             Parent tableViewParent = (Parent) loader.load();
+          Scene tableViewScene = new Scene(tableViewParent);
+           Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+           
+             window.setScene(tableViewScene);
+          window.show();
+          ControllerMenu controllerProyecto = loader.getController();
+         
+         controllerProyecto.verUsuario(contrasennaEncriptada1);
+        }
+        
        
          
          if(event.getSource() == btnTecnologias){
@@ -152,9 +166,11 @@ public class ControllerMenu1 implements Initializable{
             appStage.show(); 
         }
                   
+            
+            
          
             
-           if(event.getSource() == btnInicio){
+           if(event.getSource() == btnPerfil){
               
                  FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/MenuPrincipal.fxml"));
              Parent tableViewParent = (Parent) loader.load();
@@ -163,7 +179,7 @@ public class ControllerMenu1 implements Initializable{
            
              window.setScene(tableViewScene);
           window.show();
-          ControllerMenu controllerProyecto = loader.getController();
+          ControllerMenu1 controllerProyecto = loader.getController();
          
          controllerProyecto.verUsuario(contrasennaEncriptada1);
         }
