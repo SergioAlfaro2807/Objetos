@@ -6,5 +6,5 @@ sql, luego ya adentro de la carpeta interfaz se necesita agregar todos los .jar 
 pueda conectar a su base de datos, cuando todo esté listo solo se necesita iniciar el proyecto desde el main que es llamado "CloudTime".
 
 The project is inside the folder "interfaz" you need to create the datebase there is a SQL file "CloudTime" then when you are inside "interfaz"
-you need to import all the .jar files to the project and the you need to put to your database information in the .json file, when you do all
+you need to import all the .jar files to the project and you need to put to your database information in the .json file, when you do all
 this steps run the Java MainClass call "CloudTime"
